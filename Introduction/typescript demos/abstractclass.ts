@@ -11,7 +11,17 @@ abstract class CustomerA{
     }
 }
 
+class AdvancedSilverCustomerA extends SilverCustomerA {
+    printTicket() : void{
+        console.log('advanced silver customer ticket printed');
+}
+}
+
 
 let cust1 : CustomerA = new SilverCustomerA();
 cust1.showsTimings();
 cust1.printTicket();
+
+let cust2 : CustomerA = new AdvancedSilverCustomerA();
+cust2.showsTimings();
+cust2.printTicket();
